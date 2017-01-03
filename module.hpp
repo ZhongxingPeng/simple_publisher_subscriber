@@ -10,37 +10,37 @@
 // Class Module implements the multi-thread mechanism
 class Module {
  public:
-  Module();
-  virtual ~Module();
+    Module();
+    virtual ~Module();
 
-  // Detcah the thread
-  int detach();
+    // Detcah the thread
+    int detach();
 
-  // Add a thread
-  int join();
+    // Add a thread
+    int join();
 
-  // Every instance of Module will run the for-loop in method run() continuesly
-  virtual void* run() = 0;
+    // Every instance of Module will run the for-loop in run() continuesly
+    virtual void* run() = 0;
 
-  // Return the ID of the thread
-  pthread_t self();
+    // Return the ID of the thread
+    pthread_t self();
 
-  // Start the thread
-  int start();
+    // Start the thread
+    int start();
 
  private:
-  // Indicate whether a thread has been detached
-  // m_detached = 1: deteched
-  // m_detached = 0: undeteched
-  int m_detached;
+    // Indicate whether a thread has been detached
+    // m_detached = 1: deteched
+    // m_detached = 0: undeteched
+    int m_detached;
 
-  // Indicate whether a thread is running
-  // m_running = 1: it is running
-  // m_running = 0: it does not run
-  int m_running;
+    // Indicate whether a thread is running
+    // m_running = 1: it is running
+    // m_running = 0: it does not run
+    int m_running;
 
-  // The ID of the thread
-  pthread_t m_tid;
+    // The ID of the thread
+    pthread_t m_tid;
 };
 
 
@@ -50,12 +50,12 @@ class Module {
 // 2. class Subscribe implements publisher/subscriber mechanism between modules
 class ModuleA : public Module, public Subscriber {
  public:
-  ModuleA() { is_message_server_exist = false; }
-  void* run();
+    ModuleA() { is_message_server_exist = false; }
+    void* run();
 
  private:
-  // indicate whether the message server has been start
-  bool is_message_server_exist;
+    // indicate whether the message server has been start
+    bool is_message_server_exist;
 };
 
 
@@ -65,12 +65,12 @@ class ModuleA : public Module, public Subscriber {
 // 2. class Subscribe implements publisher/subscriber mechanism between modules
 class ModuleB : public Module, public Subscriber {
  public:
-  ModuleB() { is_message_server_exist = false; }
-  void* run();
+    ModuleB() { is_message_server_exist = false; }
+    void* run();
 
  private:
-  // indicate whether the message server has been start
-  bool is_message_server_exist;
+    // indicate whether the message server has been start
+    bool is_message_server_exist;
 };
 
 #endif  // _MODULE_H_

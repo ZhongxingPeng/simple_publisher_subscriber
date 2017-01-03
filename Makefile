@@ -1,8 +1,8 @@
-CC			= g++
-LDFLAGS		= -pthread
-SOURCES		= main.cpp module.cpp subscriber.cpp
-OBJECTS		= $(SOURCES:.cpp=.o)
-TARGET		= test
+CC          = g++
+LDFLAGS     = -pthread
+SOURCES     = main.cpp module.cpp subscriber.cpp
+OBJECTS     = $(SOURCES:.cpp=.o)
+TARGET      = test
 
 all: $(SOURCES) $(TARGET)
 
