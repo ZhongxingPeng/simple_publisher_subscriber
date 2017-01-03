@@ -36,11 +36,11 @@ class Message {
     std::string getTopicName() { return topic_name; }
     // Set content to the message
     void setMessageContent(std::string input_msg_content) {
-        message_content = input_msg_content; 
+        message_content = input_msg_content;
     }
     // Set a topic name to the message
     void setTopicName(std::string input_topic_name) {
-        topic_name = input_topic_name; 
+        topic_name = input_topic_name;
     }
 
  private:

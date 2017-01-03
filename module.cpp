@@ -71,7 +71,7 @@ void* ModuleA::run() {
         // We use getServerHandle() to obtain the handle for the message server
         ////////////////////////////////////////////////////////////////////////
 
-        // if (temp_msg_server_handle != NULL && is_message_server_exist == 
+        // if (temp_msg_server_handle != NULL && is_message_server_exist ==
         //     false) {
         //     // Change the switch
         //     is_message_server_exist = true;
@@ -83,7 +83,7 @@ void* ModuleA::run() {
         //     temp_msg_server_handle->publishMessage("Topic_for_moduleB",
         //     msg_to_ModuleB);
         // }
-        
+
 
         // Once receive message, print the message, then publish a new message
         // "A_welcome_from_ModuleA" to a topic called "Topic for moduleB",
@@ -129,7 +129,7 @@ void* ModuleB::run() {
         // We use getServerHandle() to obtain the handle for the message server
         ////////////////////////////////////////////////////////////////////////
 
-        // if (temp_msg_server_handle != NULL && is_message_server_exist == 
+        // if (temp_msg_server_handle != NULL && is_message_server_exist ==
         //     false) {
         //     // Change the switch
         //     is_message_server_exist = true;

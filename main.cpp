@@ -48,12 +48,12 @@ int main(int argc, char** argv) {
     msg_server->subscribe(thread3, "Topic_for_moduleB");
     msg_server->subscribe(thread4, "Topic_for_moduleB");
 
-    // Create and publish a new message to triger the cross publishing between 
+    // Create and publish a new message to triger the cross publishing between
     // the threads of ModuleA and ModuleB. More details can be referred to the
     // methods of "run()" in ModuleA and ModuleB.
     //
-    // Since in "run()", ModuleA waitting for 1 sec but ModuleB waitting for 2 
-    // sec During a same time peorid, threads of ModuleA will have two times of 
+    // Since in "run()", ModuleA waitting for 1 sec but ModuleB waitting for 2
+    // sec During a same time peorid, threads of ModuleA will have two times of
     // msg than those of ModuleB.
     // Output sequence might be similar to a following order:
     // thread 140354979768064, reciever msg --- A_welcome_from_ModuleA
