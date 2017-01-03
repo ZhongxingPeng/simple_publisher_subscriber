@@ -6,8 +6,7 @@ This is a simple implementation of **publisher/subscriber** mechanism for multi-
 To run the code, please do it as follows
 
 ```bash
-unzip my_pubsub.zip
-cd my_pubsub
+cd simple_pubsub
 make
 ./test
 ```
