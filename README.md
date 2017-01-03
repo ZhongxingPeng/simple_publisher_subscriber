@@ -1,6 +1,8 @@
+# A simple **publisher/subscriber**
+
 This is a simple implementation of **publisher/subscriber** mechanism for multi-thread program. The code had been written and tested in Ubuntu 16.04 and passed Google's **cpplint**. 
 
-# Installation
+## Installation
 To run the code, please do it as follows
 
 ```bash
@@ -10,7 +12,7 @@ make
 ./test
 ```
 
-# Document Structure
+## Document Structure
 The document structure of this code is
 
 ```bash
@@ -24,7 +26,7 @@ The document structure of this code is
 └── subscriber.hpp
 ```
 
-# Basic Idea
+## Basic Idea
 The basic idea of this **publisher/subscriber** mechanism is
 
 1. The `main()` function brings up a `message_server`, and passes the handle of the `message_server` to all active threads.
@@ -49,7 +51,7 @@ The basic idea of this **publisher/subscriber** mechanism is
    
    1. When new message comes, the thread fetch the message from the message buffer, then remeove the message from the buffer.
 
-# Future Work
+## Future Work
 Due to the limited time, several possible improvements remain untouched in this version of the code:
 
 1. Consider **real-time** requirements. For example, in current code, if hard interupt is invoked, the message haven't been fully publish might be lost or demaged. 
