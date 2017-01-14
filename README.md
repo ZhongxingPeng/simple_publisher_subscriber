@@ -6,7 +6,7 @@ This is a simple implementation of **publisher/subscriber** mechanism for multi-
 To run the code, please do it as follows
 
 ```bash
-git clone https://github.com/singlepetrol/simple_pubsub.git
+git clone https://github.com/ZhongxingPeng/simple_pubsub.git
 cd simple_pubsub
 make
 ./test
